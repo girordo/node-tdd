@@ -6,7 +6,7 @@ export class Student extends Entity<StudentProps> {
     super(props, id);
   }
 
-  static create(props: StudentProps): Student {
-    return new Student(props);
+  static create(props: StudentProps, id?: string): Student {
+    return new Student(props, id);
   }
 }

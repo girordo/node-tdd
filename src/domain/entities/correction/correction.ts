@@ -6,7 +6,7 @@ export class Correction extends Entity<CorrectionProps> {
     super(props, id);
   }
 
-  static create(props: CorrectionProps): Correction {
-    return new Correction(props);
+  static create(props: CorrectionProps, id?: string): Correction {
+    return new Correction(props, id);
   }
 }

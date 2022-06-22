@@ -6,7 +6,7 @@ export class Submission extends Entity<SubmissionProps> {
     super(props, id);
   }
 
-  static create(props: SubmissionProps): Submission {
-    return new Submission(props);
+  static create(props: SubmissionProps, id?: string): Submission {
+    return new Submission(props, id);
   }
 }
