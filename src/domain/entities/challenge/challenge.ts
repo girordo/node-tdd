@@ -6,7 +6,7 @@ export class Challenge extends Entity<ChallengeProps> {
     super(props, id);
   }
 
-  public create(props: ChallengeProps): Challenge {
+  static create(props: ChallengeProps): Challenge {
     return new Challenge(props);
   }
 }
